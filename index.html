@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+</head>
+<body class="container mx-auto mt-6 text-center ">
+    
+    <div class="grid grid-cols-6 my-2 mx-6 "  >
+        <div class="grid grid-cols-2 border-dotted border-4 h-40 col-start-2 col-end-6">
+            <div >
+                <h2 class="mt-6 mb-2">
+                    Escriba la Url de la imagen (pegar el link y presionar enter)
+                </h2>
+                
+                <input type="text" name="url" id="imgurl" class=" border-dashed border-4">
+                <br>
+                <h2>O</h2>
+                <button class="bg-sky-600 hover:bg-sky-700 rounded-md cursor-pointer ml-1" id="button"> Selecciona tus archivos </button>
+                <input type="file" name="" id="files"  multiple hidden>
+            </div>
+            <div>
+                <h1 class="mt-5">Escriba el titulo de su imagen</h1>
+                <input type="text" name="url" id="titulo" class=" border-dashed border-2">
+                <h2>Escriba una descripcion de su imagen</h2>
+                <input type="text" name="url" id="descripcion" class=" border-dashed border-2">
+            </div>
+        </div>
+
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6 my-2 mx-6 " id="area" >
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
